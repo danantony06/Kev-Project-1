@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Task Board | Assignment 2</title>
+
+    <!-- This line provides automatic page and style reloading when files change -->
+    <script type="module" src="/lib/client/updater.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Task Board</h1>
+
+      <form id="addCard">
+        <input type="text" name="title" id="cardTitle" placeholder="Title" required>
+        <!-- <input type="text" name="color" id="cardColor" placeholder="Color"> -->
+        Color: <input type="color" size="32" name="color" value="#b5b5b5" id = "cardColor">
+        <button type="submit" id="addButton">Add</button>
+      </form>
+    </header>
+    <p hidden id="liveCount">0</p>
+
+    <main id="board">
+      <section class="column" id="todo">
+        <h2 class="columnTitle">To Do</h2>
+        
+      </section>
+
+      <section class="column" id="doing">
+        <h2 class="columnTitle">Doing</h2>
+      </section>
+      <button class = "moveHere">— Move here —</button>
+
+      <section class="column" id="done">
+        <h2 class="columnTitle">Done</h2>
+      </section>
+      <button class = "moveHere">— Move here —</button>
+    </main>
+
+  </body>
+</html>
