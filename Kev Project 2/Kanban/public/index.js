@@ -11,6 +11,8 @@ const main = () => {
     count +=1;
     document.getElementById("liveCount").innerHTML = count;
 
+    document.getElementById("liveCount2").innerHTML = count + 3;
+
   })
   
   
@@ -24,22 +26,29 @@ const main = () => {
   document.addEventListener("DOMContentLoaded", (e) => {
   button.addEventListener("click", (e) =>{
     e.preventDefault();
+    
+    
     let title1 = document.getElementById('cardTitle').value;
     let color1 = document.getElementById('cardColor').value;
     app.addCard("todo",title1, color1);
     let input1 = document.getElementById('cardTitle');
     input1.value = ""; 
-   // var btn = document.createElement("button");
-   // btn.setAttribute("id","btn")
-   // let text = document.createTextNode("— Move here —");
-   // btn.setAttribute("class","moveHere");
-   // btn.appendChild(text);
-   // document.getElementById("todo").appendChild(btn);
 
-   // document.getElementById("doing").insertBefore(btn,null);
-  })
+    // var btn = document.createElement("button");
+    // btn.setAttribute("id",`btn-${document.getElementById("liveCount").innerHTML}`)
+    // let text = document.createTextNode("— Move here —");
+    // //btn.setAttribute("class","moveHere");
+    // btn.appendChild(text);
+    // let btnew = `btn-${document.getElementById("liveCount").innerHTML}`;
+    // document.getElementById("todo").insertAdjacentHTML("afterend",btnew);
+
+  
+//`card-${document.getElementById("liveCount").innerHTML}`
+    //document.getElementById("doing").insertBefore(btn,null);
+  })  
   
 });
+
 
 
 };

@@ -11,7 +11,17 @@
 }
 
 .moveHere{
-  display:none
+  display : none
+
+}
+
+.cards{
+  cursor: move;
+  border: 1px solid black;
+  margin-top: 1%;
+}
+.cards.dragging{
+  opacity: .5;
 }
 
 /*TODO*/

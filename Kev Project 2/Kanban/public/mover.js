@@ -8,9 +8,13 @@ export default class Mover {
 
   startMoving(card) {
     this.card = card;
+   // let userclick = document.getElementById(`destination-${document.getElementById("liveCount").innerHTML}`);
+   // let appendcard = userclick.parentElement;
+    appendcard.insertAdjacentElement("afterend",this.card);
 
 
-    this.card.remove();
+    
+    //this.card.remove();
     
     
 
@@ -18,6 +22,8 @@ export default class Mover {
 
   stopMoving() {
     //TODO
+
+    
   }
 
   //TODO
